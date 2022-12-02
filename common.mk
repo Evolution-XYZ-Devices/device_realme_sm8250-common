@@ -276,6 +276,18 @@ PRODUCT_PACKAGES += \
 # Media
 GENERIC_ODM_IMAGE := true
 
+# Moto Dolby
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
+TARGET_EXCLUDES_AUDIOFX := true
+
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
+    $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
