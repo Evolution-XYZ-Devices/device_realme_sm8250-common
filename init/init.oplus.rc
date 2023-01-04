@@ -86,6 +86,7 @@ on boot
     chown system system /sys/kernel/oplus_display/hbm
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
+    chown system system /sys/kernel/oplus_display/power_status
     chown system system /dev/tp_misc
     chown system system /proc/touchpanel/tp_fw_update
     chown system system /proc/touchpanel/oplus_tp_limit_enable
