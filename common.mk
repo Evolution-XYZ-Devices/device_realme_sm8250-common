@@ -329,6 +329,7 @@ PRODUCT_PACKAGES += \
     EvolutionFrameworksResCommon \
     FrameworksResTarget \
     OPlusExtrasResCommon \
+    OPlusCarrierConfigResCommon \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
