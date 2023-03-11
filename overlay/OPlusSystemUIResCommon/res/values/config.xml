@@ -37,4 +37,7 @@
          Leave 1 if you have mA, put 1000 if you have µA -->
     <integer name="config_battCurrentDivider" translatable="false">1</integer>
 
+    <!-- The CPU temperature divider, if needed -->
+    <integer name="config_cpuTempDivider" translatable="false">1000</integer>
+
 </resources>
