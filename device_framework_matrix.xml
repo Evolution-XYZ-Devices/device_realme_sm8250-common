@@ -90,11 +90,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.lineage.touch</name>
-        <transport>hwbinder</transport>
+        <name>vendor.oplus.hardware.touch</name>
         <version>1.0</version>
         <interface>
-            <name>ITouchscreenGesture</name>
+            <name>IOplusTouch</name>
             <instance>default</instance>
         </interface>
     </hal>
