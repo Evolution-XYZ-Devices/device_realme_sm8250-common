@@ -23,9 +23,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit proprietary libraries
 $(call inherit-product, vendor/realme/sm8250-common/sm8250-common-vendor.mk)
 
-# Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # ANT
 PRODUCT_PACKAGES += \
     com.dsi.ant@1.0.vendor
@@ -174,7 +171,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
-
+    
 # Doze
 PRODUCT_PACKAGES += \
     OplusDoze
@@ -273,8 +270,7 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_vndk.vendor \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_soft_common.vendor
+    libcodec2_hidl@1.0.vendor
 
 # Media
 GENERIC_ODM_IMAGE := true
